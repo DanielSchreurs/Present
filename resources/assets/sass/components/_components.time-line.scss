@@ -1,0 +1,49 @@
+/*------------------------------------*\
+    #time-line
+\*------------------------------------*/
+
+
+.time-line__item{
+}
+.time-line {
+  min-height: 0;
+}
+.time-line-header{
+  @include flexbox();
+}
+.time-line-header__time{
+  @include flex-grow(1);
+}
+.time-line-header__btn{
+  padding: 0;
+}
+@media (min-width: $portable) {
+  .time-line-container {
+    position: relative;
+    &:after {
+      position: absolute;
+      width: 5px;
+      height: 100%;
+      background: #0933ff;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+22,ffffff+22,47d4ff+22,47d4ff+22,0933ff+99 */
+      background: -moz-linear-gradient( $blue-dark , transparent); /* FF3.6-15 */
+      background: -webkit-linear-gradient( $blue-dark , transparent); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient( $blue-dark , transparent); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#0933ff',GradientType=1 );
+      content: "";
+      display: block;
+      left: 50%;
+      left: -moz-calc(50% - 5px);
+      left: -webkit-calc(50% - 5px);
+      left: calc(50% - 5px);
+      top: 0;
+    }
+  }
+  .time-line--impair{
+    text-align: left;
+    .time-line__item{
+      margin-left: percentage(237/1442);
+    }
+
+  }
+}

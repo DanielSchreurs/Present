@@ -1,0 +1,6 @@
+.flex-header{
+  @include flexbox();
+}
+.flex-header__title{
+  flex-grow: 1;
+}

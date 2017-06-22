@@ -1,0 +1,42 @@
+/*------------------------------------*\
+    #pagination
+\*------------------------------------*/
+
+.pagination {
+  padding-left: 0;
+  margin-top: $inuit-base-spacing-unit--small;
+  margin-bottom: $inuit-base-spacing-unit--small;
+  text-align: center;
+}
+
+ul.pagination {
+  min-height: 0;
+
+}
+
+.pagination li {
+  background: $white;
+  display: inline-block;
+  border: $border;
+  border-left: none;
+  &:first-child {
+    border-left: $border;
+    .page-link {
+      margin-left: 0;
+      @include border-left-radius($border-radius);
+    }
+  }
+  &:last-child {
+    .page-link {
+      @include border-right-radius($border-radius);
+    }
+  }
+  span,a {
+    display: inline-block;
+    padding: $inuit-base-spacing-unit--tiny $inuit-base-spacing-unit--small;
+  }
+  &.active{
+    background: $beige-light;
+  }
+}
+

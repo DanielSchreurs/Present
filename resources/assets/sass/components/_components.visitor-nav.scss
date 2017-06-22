@@ -1,0 +1,127 @@
+/*------------------------------------*\
+    #big-btn-container
+\*------------------------------------*/
+
+
+
+.svg-menu-toggle {
+  fill:$blue-dark;
+  pointer-events:all; //needs to be there so the hover works
+  cursor:pointer;
+  .bar {
+    -webkit-transform:rotate(0) translateY(0) translateX(0);
+    transform:rotate(0) translateY(0) translateX(0);
+    opacity:1;
+    -webkit-transform-origin: 20px 10px;
+    transform-origin: 20px 10px;
+
+    -webkit-transition: -webkit-transform 0.4s ease-in-out, opacity 0.2s ease-in-out;
+    transition: transform 0.4s ease-in-out, opacity 0.2s ease-in-out;
+
+  }
+  .bar:nth-of-type(1) {
+    -webkit-transform-origin: 20px 10px;
+    transform-origin: 20px 10px;
+
+  }
+  .bar:nth-of-type(3) {
+    -webkit-transform-origin: 20px 20px;
+    transform-origin: 20px 20px;
+
+  }
+
+
+}
+
+
+.hide-close .svg-menu-toggle {
+  .bar:nth-of-type(1) {
+
+    -webkit-transform:rotate(-45deg) translateY(0) translateX(0);
+    transform:rotate(-45deg) translateY(0) translateX(0);
+
+  }
+
+  .bar:nth-of-type(2) {
+
+    opacity:0;
+
+  }
+
+  .bar:nth-of-type(3) {
+
+
+    -webkit-transform:rotate(45deg) translateY(0em) translateX(0em);
+    transform:rotate(45deg) translateY(0em) translateX(0em);
+
+  }
+}
+.visitor-nav-container {
+  background: $white;
+  padding: $inuit-base-spacing-unit--small 0;
+  background: $white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.visitor-nav__header {
+  min-height: $inuit-base-spacing-unit;
+  display: flex;
+  flex-direction: row;
+}
+
+.visitor-nav__header-link--open {
+  min-width: 100px;
+  text-align: right;
+}
+
+.visitor-nav__header-link--home {
+  flex-grow: 1;
+}
+
+.list-item-container {
+  overflow: hidden;
+  max-height: 300px;
+  @extend .transition--soft;
+}
+
+.list-item-container--close {
+  max-height: 0;
+}
+
+.visitor-nav__item {
+  padding: $inuit-base-spacing-unit--small $inuit-base-spacing-unit;
+}
+
+@media (min-width: 900px) {
+  .visitor-nav-container .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .visitor-nav__header-link--open {
+    display: none;
+  }
+  .visitor-nav__header{
+    flex: 1;
+  }
+  .visitor-nav__item{
+    padding-bottom: 0;
+    padding-top: $inuit-base-spacing-unit--tiny;
+    &:last-child{
+      padding-right: 0;
+    }
+    a{
+      text-decoration: none;
+    }
+  }
+  .list-item-container {
+    display: flex;
+  }
+  .list-item-container--close {
+    max-height: none;
+  }
+
+}

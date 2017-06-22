@@ -1,0 +1,47 @@
+/*------------------------------------*\
+    #big-btn-container
+\*------------------------------------*/
+
+.tunel {
+  list-style-type: none;
+  display: flex;
+}
+
+.tunel__item {
+  margin: $inuit-base-spacing-unit auto;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: $blue-dark;
+    display: inline-block;
+    @include prefix(border-radius, 50%);
+    text-align: center;
+    color: $white;
+    text-decoration: none;
+  }
+  &:after {
+    display: inline-block;
+    flex: 1;
+    content: "";
+    border-top: 1px solid $blue-dark;
+    align-self: center;
+  }
+}
+
+.tunel__item:last-child:after {
+  display: none;
+}
+
+.tunel__item--is-current ~ li a {
+  border-top: 1px dotted $blue-dark;
+  opacity: .5;
+}
+
+.tunel__item--is-current ~ li:after,.tunel__item--is-current:after {
+  opacity: .5;
+  border-top-style: dotted;
+}

@@ -1,0 +1,60 @@
+.form-hidde.form--show {
+  z-index: 100000;
+  opacity: 1;
+  form {
+    bottom: 1px;
+  }
+}
+
+.form-hidde {
+  position: fixed;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  background: black;
+  background: rgba(37, 40, 43, 0.6);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  form {
+    @extend .form-modak-transition;
+    background: $white;
+    min-width: 44%;
+    padding: $inuit-base-spacing-unit;
+    border: $border--blue;
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    position: relative;
+    bottom: -250px;
+    -webkit-box-shadow: 0 0 37px rgba(40, 40, 40, 0.39);
+    -moz-box-shadow:0 0 37px rgba(40, 40, 40, 0.39);
+    box-shadow:0 0 37px rgba(40, 40, 40, 0.39);
+
+  }
+}
+
+.blur {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.hide-modal--top {
+  position: absolute;
+  top: -$inuit-base-spacing-unit--small;
+  right: -$inuit-base-spacing-unit--small;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: $white;
+  line-height: 0;
+}

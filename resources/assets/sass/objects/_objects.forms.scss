@@ -1,0 +1,25 @@
+/*------------------------------------*\
+    #form style
+\*------------------------------------*/
+
+label {
+  margin-right: $inuit-base-spacing-unit;
+}
+
+input[type=password], input[type=email], input[type=date], input[type=file], input[type=text], textarea, select {
+  border: $border;
+  @include prefix(border-radius, .2em);
+  padding: $inuit-base-spacing-unit--small;
+  outline: none;
+}
+
+select {
+  background: transparent; /* 13 */
+  background-image: none; /* 13 */
+  -webkit-appearance: none; /* 13 */
+  -moz-appearance: none; /* 13 */
+  appearance: none; /* 13 */
+  text-indent: 0.01px; /* 14 */
+  outline: none;
+  position: relative;
+}

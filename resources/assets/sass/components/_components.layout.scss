@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    #main-content
+\*------------------------------------*/
+
+.main-content {
+  margin-top: $inuit-base-spacing-unit--large+$inuit-base-spacing-unit--small;
+  padding: 0 $inuit-base-spacing-unit--small 71px;
+}
+
+@media (min-width: $nav-breal-point) {
+  .main-content {
+    margin-left: $nav-width;
+    margin-top: $inuit-base-spacing-unit--large+$inuit-base-spacing-unit;
+    padding: 0 $inuit-base-spacing-unit 71px;
+
+  }
+}

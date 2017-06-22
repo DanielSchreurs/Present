@@ -1,0 +1,234 @@
+%svg-common {
+	background: url(svg/sprite.view.svg) no-repeat;
+}
+
+.svg-calendar {
+	@extend %svg-common;
+	background-position: 25% 0;
+}
+
+.svg-calendar-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-checked {
+	@extend %svg-common;
+	background-position: 75% 50%;
+}
+
+.svg-checked-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-classes {
+	@extend %svg-common;
+	background-position: 0 99.97116216476016%;
+}
+
+.svg-classes-dims {
+	width: 51.94px;
+	height: 51.94px;
+}
+
+.svg-collegues {
+	@extend %svg-common;
+	background-position: 25% 25%;
+}
+
+.svg-collegues-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-columns {
+	@extend %svg-common;
+	background-position: 50% 0;
+}
+
+.svg-columns-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-compte {
+	@extend %svg-common;
+	background-position: 49.27267541357672% 98.87811370983076%;
+}
+
+.svg-compte-dims {
+	width: 49.64px;
+	height: 49.64px;
+}
+
+.svg-cours {
+	@extend %svg-common;
+	background-position: 0 50%;
+}
+
+.svg-cours-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-create {
+	@extend %svg-common;
+	background-position: 25% 50%;
+}
+
+.svg-create-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-down {
+	@extend %svg-common;
+	background-position: 50% 50%;
+}
+
+.svg-down-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-edit {
+	@extend %svg-common;
+	background-position: 75% 0;
+}
+
+.svg-edit-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-home {
+	@extend %svg-common;
+	background-position: 75% 25%;
+}
+
+.svg-home-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-import {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.svg-import-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-locked {
+	@extend %svg-common;
+	background-position: 0 75%;
+}
+
+.svg-locked-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-logo {
+	@extend %svg-common;
+	background-position: 25% 75%;
+}
+
+.svg-logo-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-logo-white {
+	@extend %svg-common;
+	background-position: 50% 75%;
+}
+
+.svg-logo-white-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-man307 {
+	@extend %svg-common;
+	background-position: 75% 75%;
+}
+
+.svg-man307-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-notifications {
+	@extend %svg-common;
+	background-position: 100% 0;
+}
+
+.svg-notifications-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-power {
+	@extend %svg-common;
+	background-position: 100% 25%;
+}
+
+.svg-power-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-students {
+	@extend %svg-common;
+	background-position: 100% 50%;
+}
+
+.svg-students-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-to-do {
+	@extend %svg-common;
+	background-position: 24.93638676844784% 99.8607710403764%;
+}
+
+.svg-to-do-dims {
+	width: 51.71px;
+	height: 51.71px;
+}
+
+.svg-trash {
+	@extend %svg-common;
+	background-position: 50% 25%;
+}
+
+.svg-trash-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-unlocked {
+	@extend %svg-common;
+	background-position: 0 25%;
+}
+
+.svg-unlocked-dims {
+	width: 52px;
+	height: 52px;
+}
+
+.svg-user {
+	@extend %svg-common;
+	background-position: 100% 75%;
+}
+
+.svg-user-dims {
+	width: 52px;
+	height: 52px;
+}
+

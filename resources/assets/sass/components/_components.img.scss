@@ -1,0 +1,24 @@
+.user-image{
+  @include prefix(border-radius, 50%);
+}
+.user-image--small{
+  max-width: 40px;
+}
+.user-image.student-image{
+  margin-right:$inuit-base-spacing-unit;
+}
+.user-image--medium{
+  max-width: 150px;
+}
+.user-image--teacher-action{
+  width: 33px;
+  height: 33px;
+}
+img.profile-picture{
+  margin-right:$inuit-base-spacing-unit--small;
+}
+@media (min-width: $palm) {
+  .user-image.user-image--teacher-action{
+    margin-right: $inuit-base-spacing-unit--small;
+  }
+}

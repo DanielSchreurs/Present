@@ -1,0 +1,360 @@
+/*------------------------------------*\
+    #form style
+\*------------------------------------*/
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="search"],
+input[type="password"],
+input[type="datetime"],
+input[type="email"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"], textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-group {
+  position: relative;
+  margin: $inuit-base-spacing-unit 0;
+}
+
+.simple-label {
+
+}
+
+.label-paceholder {
+  position: absolute;
+  left: $inuit-base-spacing-unit--small;
+  top: $inuit-base-spacing-unit--small/2;
+  font-size: $inuit-heading-size-4;
+}
+
+input:focus + .label-paceholder, textarea:focus + .label-paceholder, input:active + .label-paceholder, .active + .label-paceholder {
+  @extend .transition;
+  top: -$inuit-base-spacing-unit--small;
+  color: $gray-dark;
+}
+
+input[type="text"]:focus,
+input[type="text"]:active,
+input[type="search"]:focus,
+input[type="search"]:active,
+input[type="password"]:focus,
+input[type="password"]:active,
+input[type="datetime"]:focus,
+input[type="datetime"]:active,
+input[type="email"]:focus,
+input[type="email"]:active,
+input[type="date"]:focus,
+input[type="date"]:active,
+input[type="month"]:focus,
+input[type="month"]:active,
+input[type="time"]:focus,
+input[type="time"]:active,
+input[type="week"]:focus,
+input[type="week"]:active,
+textarea:focus,
+textarea:active,
+select:focus,
+select:active {
+  @extend .transition;
+  border-color: $blue-dark;
+  -webkit-box-shadow: 0 0 5px $blue-lighter;
+  -moz-box-shadow: 0 0 5px $blue-lighter;
+  box-shadow: 0 0 5px $blue-lighter;
+}
+
+.form-group {
+  display: block;
+}
+
+.simple-select {
+  padding: 5px 8px;
+  width: 130%;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: $border;
+}
+
+.form-group--large__submit, .form-group--large__input {
+  width: 100%;
+}
+
+html .input-search-header {
+  padding: $inuit-base-spacing-unit--tiny;
+  color: $blue-dark;
+  width: 100%;
+  outline: none
+}
+
+.submit--search {
+  margin: 0 $inuit-base-spacing-unit--tiny;
+  max-height: 33px;
+}
+
+@media screen and (min-width: $lap) {
+  .form-group--large {
+    min-height: 200px;
+  }
+  .form-group--large__input {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: percentage(1368.3/1547);
+    max-width: none;
+  }
+  .form-group--large__submit {
+    position: absolute;
+    right: 0;
+    width: 10%;
+    top: 0;
+    bottom: 0;
+    min-width: 0;
+  }
+}
+
+.floating-placeholder {
+  position: relative;
+  max-width: 600px;
+}
+
+.floating-placeholder-float--small-height {
+  margin: $inuit-base-spacing-unit--small 0;
+
+}
+
+.floating-placeholder-float--small {
+  display: inline-block;
+  width: 48%;
+  @extend .floating-placeholder-float--small-height;
+}
+
+.floating-placeholder-float--small + .floating-placeholder-float--small {
+  margin-left: 4%;
+}
+
+.floating-placeholder__label {
+  position: absolute;
+  background: $beige-light;
+  top: -$inuit-base-spacing-unit--small;
+  left: $inuit-base-spacing-unit--tiny;
+  padding: 0 $inuit-base-spacing-unit--small;
+  white-space: nowrap;
+  z-index: 1;
+  padding-left: $inuit-base-spacing-unit--tiny;
+  i {
+    color: $red;
+    position: relative;
+    top: -0.1em;
+  }
+}
+
+.required-message {
+  i {
+    color: $red;
+    position: relative;
+    top: -0.1em;
+  }
+}
+
+.floating-placeholder__label--blue {
+  background: $blue-dark;
+}
+
+.floating-placeholder__label--white {
+  background: $white;
+}
+
+.floating-placeholder__input {
+  background: transparent;
+  width: 100%;
+}
+
+.form-group-container {
+  border: none;
+  margin-bottom: $inuit-base-spacing-unit--large;
+}
+
+.form-group-container:last-of-type {
+  margin-bottom: $inuit-base-spacing-unit--small;
+}
+
+.form-group-container__legend {
+  font-style: italic;
+  font-size: .9em;
+}
+
+.form-group__info-box {
+  display: none;
+}
+
+// style for info box
+@media (min-width: $palm) {
+  .form-group__info-box {
+    display: block;
+    border: $border--blue;
+    position: absolute;
+    min-width: 0;
+    margin-left: $inuit-base-spacing-unit;
+    top: 0;
+    padding: $inuit-base-spacing-unit--small;
+    right: 0;
+    left: 100%;
+    background: $white;
+    z-index: -100000000;
+    opacity: 0;
+    width: 0;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+      border-right: 20px solid $blue-dark;
+      left: -20px;
+      top: -1px;
+    }
+  }
+
+  input:focus + .form-group__info-box, select:focus + .form-group__info-box, textarea:focus + .form-group__info-box,
+  input:active + .form-group__info-box, select:active + .form-group__info-box, textarea:active + .form-group__info-box,
+  input:focus + .form-group__svg + .form-group__info-box, select:focus + .form-group__svg + .form-group__info-box, textarea:focus + .form-group__svg + .form-group__info-box {
+    opacity: 1;
+    z-index: 2;
+    min-width: 250px;
+    width: auto;
+  }
+}
+
+// style for select box
+
+.form-group--select:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: $inuit-base-spacing-unit--small;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid $blue-dark;
+}
+
+// style for svg in form-group
+
+.form-group__svg {
+  background: $beige-light;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  bottom: 1px;
+  @include prefix(border-radius, 0 .2em .2em 0);
+  padding: $inuit-base-spacing-unit--tiny;
+  padding-bottom: 0;
+  min-width: percentage(38/495);
+  text-align: center;
+  max-height: 42px;
+  svg {
+    position: relative;
+    top: 3px;
+    display: inline-block;
+  }
+}
+
+.form-group__svg--white {
+  background: $white;
+}
+
+.form-group__svg--no {
+  background: transparent;
+}
+
+.add_student_to_class {
+  border: $border--dashed;
+  border-radius: $alert-border-radius;
+  padding: $inuit-base-spacing-unit--large $inuit-base-spacing-unit;
+}
+
+.profile-avatar__placeholder {
+  display: block;
+  height: 12.8rem;
+  width: 12.8rem;
+  border-radius: 50%;
+  border: 2px dashed $gray-light;
+  background-color: $white;
+  overflow: hidden;
+  position: relative;
+}
+.profile-avatar__placeholder__message{
+  position: absolute;
+  top: 6.3125em;
+  left: percentage(27/600);
+  max-width: 150px;
+  text-align: center;
+  color: $gray-dark;
+}
+.avatar--success+.profile-avatar__placeholder__message{
+  @extend .visuallyhidden;
+}
+.profile-avatar__placeholder__meta {
+  margin-bottom: $inuit-base-spacing-unit--small;
+  font-size: 0.8em;
+  font-style: italic;
+  max-width: 400px;
+}
+
+.profile-avatar__placeholder + input {
+  display: none !important;
+}
+
+.user_avatar-container {
+  margin-bottom: $inuit-base-spacing-unit--large;
+  max-width: 600px;
+  label {
+    cursor: pointer;
+  }
+}
+
+.profile-avatar__callout {
+  display: block;
+  position: absolute;
+  left: 12rem;
+  top: -3.5rem;
+  height: 15rem;
+  width: 22.5rem;
+  z-index: 1;
+}
+
+.avatar--success {
+  border: $border--blue--bold;
+}
+
+.import-student-message {
+  padding: $inuit-base-spacing-unit;
+}
+
+.form-delete-on-page {
+  margin-top: $inuit-base-spacing-unit;
+}
+
+@media (min-width: $lap) {
+  html .input-search-header {
+    width: auto;
+  }
+}

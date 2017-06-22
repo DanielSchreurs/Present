@@ -1,0 +1,110 @@
+/*------------------------------------*\
+    #main header
+\*------------------------------------*/
+
+.main-header{
+  background: $white;;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  color: $blue-dark;
+  z-index: 2;
+  @include flexbox();
+  border-bottom: 1px solid $gray-light;
+}
+.user-image{
+  margin-right: 0;
+}
+.main-header__item--title{
+  font-size:$inuit-heading-size-5;
+}
+.main-header__item{
+  padding: $inuit-base-spacing-unit--tiny;
+}
+
+.header-for-mobile{
+ padding: $inuit-base-spacing-unit--tiny;
+  font-size:$inuit-heading-size-4;
+  color: $blue-dark;
+}
+.main-header__item--search{
+  @include flex-grow(1);
+}
+.main-header__item--logo{
+  padding-left: 10px;
+}
+.main-header__item--dropdown{
+  padding-right: 2px;
+}
+
+@media (min-width: $lap) {
+  .main-header{
+    border-bottom: none;
+  }
+  .main-header__item{
+    padding: $inuit-base-spacing-unit--tiny 0;
+  }
+  .main-header__item--search{
+    margin: 0 $inuit-base-spacing-unit;
+  }
+  .main-header__item--search{
+    @include flex-grow(0);
+  }
+  .main-header__item--title{
+    @include flex-grow(2);
+  }
+  .main-header__item--logo{
+    padding-left: $inuit-base-spacing-unit;
+    width: $nav-width;
+    text-decoration: none;
+    color: $beige-dark;
+    font-size:$inuit-heading-size-4;
+    span{
+      padding-left: $inuit-base-spacing-unit--tiny;
+    }
+  }
+  .main-header__item--title{
+    font-size:$inuit-heading-size-4;
+  }
+  .main-header__item--dropdown{
+    padding-right: $inuit-base-spacing-unit;
+  }
+}
+@media (min-width:$portable) {
+  .main-header__item--title{
+    font-size:$inuit-heading-size-2;
+    line-height: 1;
+  }
+}
+@media (min-width:1400px) {
+  .main-header__item--search{
+    @include flex-grow(2);
+    max-width: 480px;
+    form{
+      @include flexbox();
+
+    }
+  }
+  .input-search-header{
+    @include flex-grow(1);
+  }
+
+}
+@media (min-width: 720px) and (max-width: 838px) {
+  .main-header__item--logo{
+    max-height: 0;
+  }
+}
+@media (max-width: 834px) {
+  .main-header__item--logo__logo{
+    border: 0 !important;
+    clip: rect(0 0 0 0) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+  }
+}

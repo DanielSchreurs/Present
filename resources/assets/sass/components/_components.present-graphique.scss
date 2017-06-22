@@ -1,0 +1,14 @@
+div.google-visualization-tooltip {
+  
+}
+.graphique-container{
+  background: white;
+  border: 1px solid $blue-dark;
+  //max-width: 1022px;
+  padding: 1em;
+  -webkit-border-radius: 0 0 $default-border-radius $default-border-radius;
+  -moz-border-radius: 0 0 $default-border-radius $default-border-radius;
+  border-radius: 0 0 $default-border-radius $default-border-radius;
+  border-top:none ;
+  min-height: 380px;
+}

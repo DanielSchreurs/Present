@@ -1,0 +1,87 @@
+.box--animate{
+  -webkit-animation: scale-box-1 1s ease 1;
+  -o-animation: scale-box-1 1s ease 1;
+  animation: scale-box-1 1s ease 1;
+}
+
+
+.animate-avatar {
+  display: inline-block;
+  -webkit-animation: avatar-animation-1 1s ease 1;
+  -o-animation: avatar-animation-1 1s ease 1;
+  animation: avatar-animation-1 1s ease 1;
+}
+
+@-webkit-keyframes avatar-animation-1 {
+  from {
+    width:0;
+  }
+  to {
+    width:100%;
+  }
+}
+
+@-moz-keyframes avatar-animation-1 {
+  from {
+    width:0;
+  }
+  to {
+    width:100%;
+  }
+}
+
+@-o-keyframes avatar-animation-1 {
+  from {
+    width:0;
+  }
+  to {
+    width:100%;
+  }
+}
+
+@keyframes avatar-animation-1 {
+  from {
+    width:0;
+  }
+  to {
+    width:100%;
+  }
+}
+
+
+
+@-webkit-keyframes scale-box-1 {
+  from {
+    -webkit-transform: scale(1.1);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes scale-box-1 {
+  from {
+    -moz-transform: scale(1.1);
+  }
+  to {
+    -moz-transform: scale(1);
+  }
+}
+
+@-o-keyframes scale-box-1 {
+  from {
+    -o-transform: scale(1.1);
+  }
+  to {
+    -o-transform: scale(1);
+  }
+}
+
+@keyframes scale-box-1 {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}

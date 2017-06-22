@@ -1,0 +1,27 @@
+/*------------------------------------*\
+    #WRAPPERS
+\*------------------------------------*/
+
+.wrapper {
+    max-width: $wrapper;
+    margin: 0 auto;
+    padding-right: $inuit-base-spacing-unit--small;
+    padding-left:  $inuit-base-spacing-unit--small;
+
+    @include media-query(lap-and-up) {
+        padding-right: $inuit-base-spacing-unit;
+        padding-left:  $inuit-base-spacing-unit;
+    }
+
+}
+
+
+/**
+ * This is a bit of a magic number; a wrapper this wide will allow us to ‘hang’
+ * one icon out of the rest of the page’s ‘grid’. It is used primarily on the
+ * home page promo boxes.
+ */
+.wrapper--wide {
+    max-width: 1276px;
+    @extend .wrapper;
+}

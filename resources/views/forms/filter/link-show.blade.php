@@ -1,0 +1,1 @@
+<a href="#" class="toogle-filter-result">Cacher l’outil pour filtrer les résultats !</a>

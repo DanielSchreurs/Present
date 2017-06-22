@@ -1,0 +1,36 @@
+a {
+  color: $blue-dark;
+}
+
+.link--black {
+  color: $gray-dark;
+}
+
+.link-spacer {
+  padding-right: $inuit-base-spacing-unit--small;
+}
+
+.link-spacer--btn {
+  margin-right: $inuit-base-spacing-unit--small;
+}
+
+.link--alert {
+  display: inline-block;
+  background: none;
+  border: none;
+  color: $alert-danger-bg;
+  text-decoration: underline;
+}
+.box__item--small>a:first-child {
+  min-width: percentage(300/451);
+}
+.csv-fload-file{
+  margin-bottom: 1em;
+  display: inline-block;
+}
+.text-succes{
+  color: $succes;
+}
+.text-alert{
+  color: $red;
+}

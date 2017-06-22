@@ -1,0 +1,41 @@
+/*------------------------------------*\
+    #header style
+\*------------------------------------*/
+
+.big-page-header {
+  margin-top: $inuit-base-spacing-unit;
+  font-weight: lighter;
+  text-align: center;
+  font-size: $inuit-heading-size-1*2;
+}
+
+.box-header--big{
+  min-height: 100px;
+}
+.box-header{
+  font-weight: 300;
+  color: $gray-dark;
+  display: block;
+  margin-bottom: $inuit-base-spacing-unit--tiny;
+  text-decoration: none;
+}
+.box-header--many-content{
+  margin-bottom: $inuit-base-spacing-unit;
+}
+.box-header a:first-child{
+  text-decoration: none;
+  color: inherit;
+}
+.header--white{
+  color: white;
+}
+.meta-header{
+  font-size: $inuit-heading-size-3;
+  padding: $inuit-base-spacing-unit 0;
+}
+.meta-header>a{
+  color: $gray-dark;
+}
+.header-page{
+  margin-bottom:$inuit-base-spacing-unit;
+}

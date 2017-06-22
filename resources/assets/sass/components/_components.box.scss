@@ -1,0 +1,100 @@
+/*------------------------------------*\
+    #box
+\*------------------------------------*/
+
+.header-action-box {
+  margin-bottom: $inuit-base-spacing-unit;
+}
+
+.header-action-box__item {
+  display: block;
+  margin-bottom: $inuit-base-spacing-unit--small;
+}
+
+.box {
+  padding: $inuit-base-spacing-unit--tiny $inuit-base-spacing-unit;
+  @include prefix(border-radius, .2em);
+  margin-bottom: $inuit-base-spacing-unit;
+  background: $white;
+  border: $border--white--bold;
+  min-height: 100px;
+  list-style-type: none;
+  border: 2px solid transparent;
+  padding-bottom: $inuit-base-spacing-unit--small;
+}
+
+.box--classe--list {
+  min-height: 0;
+  .box-header {
+    @include flexbox();
+    @include flex-direction(column);
+    & > a:first-child {
+      @include flex-grow(1);
+    }
+  }
+}
+.box-header{
+  h1,h2,h3,h4,h5,h6{
+    font-weight: 300;
+    font-size:inherit;
+  }
+}
+.box--classe--list {
+  margin-bottom: $inuit-base-spacing-unit--small;
+  min-height: 0;
+}
+
+.box--edit {
+  border: $border--dashed;
+}
+.box__item {
+   @include flexbox();
+  @include flex-direction(row);
+  margin-top: $inuit-base-spacing-unit--small;
+  @extend .media;
+  text-decoration: none;
+  &:hover {
+    background: rgb(251, 251, 251);
+  }
+}
+.box-item--planning__name{
+  text-decoration: underline;
+}
+.box__item__body {
+  @include flex-grow(1);
+}
+
+.box__item__actions {
+  @include flexbox();
+  @include flex-direction(row);
+}
+
+.box--succes {
+  padding: $inuit-base-spacing-unit;
+  @include prefix(border-radius, .5em);
+  border: $border--succes--bold;
+
+}
+
+.box--create {
+  border: $border--dashed--bold;
+
+}
+
+.box__meta-info {
+  color: $blue-dark;
+  font-size: 0.8em;
+}
+
+.color-box {
+  width: 20px;
+  height: 10px;
+  display: inline-block;
+}
+
+@media (min-width: $palm) {
+  .header-action-box__item {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,35 @@
+.note-conatainer {
+  margin-top: $inuit-base-spacing-unit;
+  > .layout__item {
+    border-right: $border;
+    margin-bottom:$inuit-base-spacing-unit;
+    &:last-of-type {
+      border: none;
+    }
+  }
+}
+
+.header_note {
+  padding-bottom: $inuit-base-spacing-unit--small;
+}
+
+.note-list {
+  list-style: none;
+  > li {
+    margin-bottom: $inuit-base-spacing-unit--tiny;
+    >form,>a{
+      vertical-align: sub;
+    }
+  }
+}
+
+.note-list__date {
+  color: $gray-dark;
+  display: inline;
+  margin-right: $inuit-base-spacing-unit--small;
+  font-size:0.9em;
+}
+
+.note-list__text {
+  display: inline;
+}

@@ -1,0 +1,150 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Fira Sans Light'), local('FiraSans-Light'), local("FiraSans-Light"), url(./font/FiraSans-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fira Sans'), local('FiraSans-Regular'), url(./font/FiraSans-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Fira Sans Bold'), local('FiraSans-Bold'), url(./font/FiraSans-SemiBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Fira Sans Light Italic'), local('FiraSans-LightItalic'), url(./font/FiraSans-LightItalic.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Fira Sans Italic'), local('FiraSans-Italic'), url(./font/FiraSans-Italic.ttf) format("truetype");
+}
+//// 1. Settings
+@import "./settings/settings.general";
+@import "./settings/settings.colors";
+@import "./settings/settings.styles";
+@import "./settings/settings.btn";
+@import "./settings/settings.tooltip";
+@import "./settings/settings.headers";
+@import "./settings/settings.widths";
+@import "./settings/settings.alert";
+@import "./settings/settings.border-radius";
+@import "./settings/settings.hover";
+
+@import "../../../node_modules/inuit-starter-kit/node_modules/inuit-defaults/settings.defaults";
+//// 2. Tools
+@import "../../../node_modules/inuit-starter-kit/node_modules/inuit-functions/tools.functions";
+@import "../../../node_modules/inuit-starter-kit/node_modules/inuit-mixins/tools.mixins";
+@import "../../../node_modules/inuit-responsive-tools/tools.responsive";
+@import "../../../node_modules/inuit-tools-widths/tools.widths";
+@import "tools/tools.align.mixin";
+@import "./tools/tools.alerts.mixin";
+@import "./tools/tools.gradient.mixin";
+@import "./tools/tools.opacity";
+@import "./tools/tools.border-radius.mixin";
+@import "./tools/tools.hover.mixin";
+@import "./tools/tools.flex.mixin";
+//// 3. Generic
+@import "../../../node_modules/inuit-starter-kit/node_modules/inuit-normalize/generic.normalize";
+@import "../../../node_modules/inuit-starter-kit/node_modules/inuit-box-sizing/generic.box-sizing";
+@import "../../../node_modules/inuit-reset/generic.reset";
+@import "../../../node_modules/inuit-box-sizing/generic.box-sizing";
+@import "./generic/generic.helper";
+//// 4. Base
+@import "../../../node_modules/inuit-starter-kit/node_modules/inuit-page/base.page";
+@import "../../../node_modules/inuit-paragraphs/base.paragraphs";
+@import "../../../node_modules/inuit-headings/base.headings";
+@import "../../../node_modules/inuit-images/base.images";
+@import "./base/base.header";
+@import "./base/base.html";
+//// 5. Objects
+@import "../../../node_modules/inuit-media/objects.media";
+@import "../../../node_modules/inuit-buttons/objects.buttons";
+@import "../../../node_modules/inuit-layout/objects.layout";
+@import "../../../node_modules/inuit-list-block/objects.list-block";
+@import "./objects/objects.introjs";
+@import "./objects/objects.introjs-rtl";
+@import "./objects/objects.list-block";
+@import "./objects/objects.wrappers";
+@import "./objects/objects.forms";
+@import "./objects/objects.flex-box";
+@import "./objects/objects.chosen";
+//// 6. Components
+@import "./components/components.links";
+@import "./components/components.layout";
+@import "./components/components.box";
+@import "./components/components.img";
+@import "./components/components.headers";
+@import "./components/components.profile-list";
+@import "components/forms/components.forms";
+@import "./components/components.transitions";
+@import "./components/components.sections";
+@import "./components/components.nav";
+@import "./components/components.main-header";
+@import "./components/components.dropdown";
+@import "./components/components.columns";
+@import "./components/components.welcome";
+@import "./components/forms/components.welcome-forms";
+@import "./components/forms/components.box-search";
+@import "./components/forms/components.select";
+@import "./components/components.btn";
+@import "./components/components.places";
+@import "./components/components.message_box";
+@import "./components/components.border";
+@import "./components/forms/components.errors";
+@import "./components/components.informative-box";
+@import "./components/components.flash-messages";
+@import "./components/components.colleagues-list";
+@import "./components/components.big-btn-container";
+@import "./components/components.info";
+@import "./components/components.tunel";
+@import "./components/components.date-picker";
+@import "./components/components.tooltip";
+@import "./components/components.meta-time";
+@import "./components/components.ruler";
+@import "./components/components.student-import";
+@import "./components/components.user-register-form";
+@import "./components/components.visitor-nav";
+@import "./components/components.pagination";
+@import "./components/components.present-graphique";
+@import "./components/components.google-graphiques";
+@import "./components/forms/components.link-for-input-action";
+@import "./components/components.time-line";
+@import "./components/components.articles";
+@import "./components/components.footer";
+@import "./components/components.animation";
+@import "./components/components.create-pagination";
+@import "./components/components.tabs";
+@import "./components/components.todo-list";
+@import "./components/components.filter-result";
+@import "./components/components.hello";
+@import "./components/components.dashbord-layout";
+@import "./components/components.flex-header";
+@import "./components/components.note";
+//@import "./components/components.croppie";
+
+
+//// 7. Trumps
+@import "../../../node_modules/inuit-headings-trumps/trumps.headings";
+@import "../../../node_modules/inuit-clearfix/trumps.clearfix";
+@import "../../../node_modules/inuit-print/trumps.print";
+@import "../../../node_modules/inuit-widths/trumps.widths";
+@import "./trumps/trumps.widths-responsive";
+@import "./trumps/trumps.svg";
+@import "./trumps/trumps.form-box";
+@import "./trumps/trumps.show-hide-forms";
+@import "./trumps/trumps.links";
+@import "./trumps/trumps.background";
+@import "./trumps/trumps.box";
+@import "./vendor/jquery-ui.min";
+@import "./trumps/trumps.print";

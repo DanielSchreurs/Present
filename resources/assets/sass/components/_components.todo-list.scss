@@ -1,0 +1,16 @@
+.todo-list{
+  list-style-type: none;
+  margin-top: $inuit-base-spacing-unit;
+}
+.todo-list__item{
+
+}
+.todo-list__item--succes{
+  color: $succes;
+}
+.todo-list__item--alert{
+  color: $red;
+}
+.box .todo-list__item--alert{
+  color: $gray-dark;
+}

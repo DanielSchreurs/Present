@@ -1,0 +1,208 @@
+/*------------------------------------*\
+    #BTN
+\*------------------------------------*/
+
+.btn {
+  cursor: pointer;
+  @include prefix(border-radius, .2em);
+  @extend .transition;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: none;
+  position: relative;
+  border: 1px solid transparent;
+  background: $blue-dark;
+  span {
+    vertical-align: super;
+    margin-left: $inuit-media-gutter--tiny;
+  }
+  &:hover, &:focus {
+    border-color: $blue-dark;
+    background: transparent;
+    color: $blue-dark;
+  }
+}
+
+.btn--large {
+  width: 100%;
+  padding: $inuit-base-spacing-unit--small;
+}
+
+.btn--blue-svg:hover, .btn--blue-svg:active, .btn--blue-svg:focus {
+  .svg--white {
+    fill: $blue-dark;
+  }
+}
+
+.btn--red-svg:hover, .btn--red-svg:active, .btn--red-svg:focus {
+  .svg--white {
+    fill: $red;
+  }
+}
+
+.btn--soft {
+  @include prefix(border-radius, 2em)
+}
+
+.btn--white, .btn--white--active:hover {
+  background: transparent;
+  border: $border;
+}
+
+.btn--white--active:hover, .btn--white--active:focus, .btn--white--active:active {
+  color: white;
+}
+
+.btn--white:hover, .btn--white:focus, .btn--white:active, .btn--white--active {
+  background: white;
+  color: $blue-dark;
+}
+
+.btn-link {
+  color: $gray-dark;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.btn-link--white {
+  color: white;
+}
+
+.btn--alert {
+  background: $red;
+  color: white;
+  border-color: transparent;
+  &:hover, &:focus {
+    color: $red;
+    border-color: $red;
+    background: transparent;
+  }
+}
+
+.btn--add {
+  font-size: 16px;
+  margin-left: $inuit-base-spacing-unit;
+}
+
+.btn--spacer {
+  margin: $inuit-base-spacing-unit--small;
+  margin-left: 0;
+}
+
+.btn-container {
+  padding: $inuit-base-spacing-unit;
+  text-align: center;
+}
+
+.btn--enregistrer {
+  width: 100%;
+
+}
+
+.btn--identifier {
+  width: 100%;
+}
+
+.btn--identifier + .btn--enregistrer {
+  margin-left: 0;
+  margin-top: $inuit-base-spacing-unit--small;
+}
+
+.btn--reversed-blue {
+  background: none;
+  border-color: $blue-dark;
+  color: $blue-dark;
+  &:hover, &:focus, &:active {
+    background: $blue-dark;
+    color: $white;
+  }
+}
+
+.btn--social {
+  line-height: 16px;
+  vertical-align: top;
+  width: 100%;
+  .btn--social__message {
+    margin-left: $inuit-base-spacing-unit--small;
+    vertical-align: super;
+  }
+}
+
+.btn--social + .btn--social {
+  margin-left: 0;
+  margin-top: $inuit-base-spacing-unit--small;
+}
+
+.btn--github {
+  background: $github-bcg;
+  &:hover, &:focus {
+    border-color: $github-bcg;
+    color: $github-bcg;
+    .svg--social {
+      fill: $github-bcg;
+    }
+  }
+}
+
+.btn--facebook {
+  background: $facebook-bcg;
+  &:hover, &:focus {
+    color: $facebook-bcg;
+    border-color: $facebook-bcg;
+    .svg--social {
+      fill: $facebook-bcg;
+    }
+  }
+}
+
+.btn--twitter {
+  background: $twitter-bcg;
+  &:hover, &:focus {
+    color: $twitter-bcg;
+    border-color: $twitter-bcg;
+    .svg--social {
+      fill: $twitter-bcg;
+    }
+  }
+}
+
+.btn--google {
+  background: $google-bcg;
+  &:hover, &:focus {
+    color: $google-bcg;
+    border-color: $google-bcg;
+    .svg--social {
+      fill: $google-bcg;
+    }
+  }
+}
+
+.btn--delete-user {
+  width: 100%;
+}
+
+.btn--delete-user-label:checked + .btn--delete-user {
+  background: transparent;
+  border-color: $red;
+  color: $red;
+}
+
+@media (min-width: $palm) {
+  .btn + .btn, .btn-link + .btn-link {
+    margin-left: $inuit-base-spacing-unit;
+  }
+  .btn--social {
+    width: 48%;
+  }
+  .btn--social + .btn--social, .btn--identifier + .btn--enregistrer {
+    margin-left: 4%;
+    margin-top: 0;
+  }
+  .btn--enregistrer {
+    width: 66%;
+  }
+  .btn--identifier {
+    width: 30%;
+  }
+
+}

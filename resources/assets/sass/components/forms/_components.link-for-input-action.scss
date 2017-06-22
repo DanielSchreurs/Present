@@ -1,0 +1,28 @@
+/*------------------------------------*\
+    .link-for-input-action
+\*------------------------------------*/
+
+.link-for-input-action {
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-size: 0.7em;
+  background: $white;
+  border: $border;
+  border-bottom: none;
+  -webkit-border-radius: .2em .2em 0 0;
+  -moz-border-radius: .2em .2em 0 0;
+  border-radius: .2em .2em 0 0;
+  display: block;
+  padding: $inuit-base-spacing-unit--tiny;
+}
+.link-for-input-action-container:not(:first-of-type){
+  margin-top: $inuit-base-spacing-unit--large;
+}
+.link-for-input-action + input {
+  -webkit-border-top-right-radius: 0;
+  -moz-border-top-right-radius: 0;
+  -ms-border-top-right-radius: 0;
+  -o-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+}

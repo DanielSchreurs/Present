@@ -1,0 +1,8 @@
+/*------------------------------------*\
+    #list block
+\*------------------------------------*/
+
+.list-block__item--small, .list-block--small > li{
+  padding: $inuit-base-spacing-unit--small;
+}
+

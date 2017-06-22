@@ -1,0 +1,12 @@
+html{
+  font-family: $base-fon-family;
+}
+main{
+  min-height: 100%;
+}
+a:hover,a:focus{
+  color: $blue-light;
+}
+.visistor body{
+  padding-top: 5em;
+}

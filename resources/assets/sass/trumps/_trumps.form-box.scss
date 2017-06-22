@@ -1,0 +1,17 @@
+.box,.box-wrapper {
+  .floating-placeholder__label {
+    background: $white;
+  }
+  .form-group-container{
+    margin-bottom: $inuit-base-spacing-unit--small;
+  }
+  .fmask.select .b{
+    background: $white;
+  }
+}
+
+form.box__search--small{
+  padding-top: 0 ;
+  padding-bottom: $inuit-base-spacing-unit--small;
+  @extend .visuallyhidden;
+}

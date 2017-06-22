@@ -1,0 +1,50 @@
+/*------------------------------------*\
+    #welcome page
+\*------------------------------------*/
+
+.welcome-container {
+  margin-top: $inuit-base-spacing-unit--huge;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+}
+
+.welcome-form {
+  background: $white;
+  border: $border;
+  padding: $inuit-base-spacing-unit--small;
+}
+.welcome-form--small{
+  padding: $inuit-base-spacing-unit--small;
+}
+.social-separator{
+  border-top:1px solid $gray-light;
+  text-align: center;
+  margin: $inuit-base-spacing-unit 0 0;
+}
+.social-separator--last{
+  margin-top:$inuit-media-gutter--large;
+}
+.social-separator__word{
+  position: relative;
+  background: $beige-light;
+  top:-$inuit-base-spacing-unit--small;
+  padding: $inuit-base-spacing-unit--small;
+  font-size: $inuit-heading-size-6;
+  text-transform: uppercase;
+}
+.welkcome-caption{
+  margin:$inuit-base-spacing-unit--small 0;
+  font-size:$inuit-heading-size-5;
+}
+@media screen and (min-width: 500px) {
+  .welcome-form {
+    min-width: 500px;
+  }
+}
+@media (min-width: $portable) {
+  .welcome-form {
+    padding: $inuit-base-spacing-unit $inuit-base-spacing-unit--large;
+  }
+}

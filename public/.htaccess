@@ -1,0 +1,27 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    RewriteEngine On
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+    ExpiresActive On
+    	ExpiresDefault "access plus 7200 seconds"
+    	ExpiresByType image/jpg 			"access plus 1 week"
+    	ExpiresByType image/jpeg 			"access plus 1 week"
+    	ExpiresByType image/png 			"access plus 1 week"
+    	ExpiresByType image/gif 			"access plus 1 week"
+    	AddType image/x-icon .ico
+    	ExpiresByType image/ico 			"access plus 1 week"
+    	ExpiresByType image/icon 			"access plus 1 week"
+    	ExpiresByType image/x-icon 			"access plus 1 week"
+</IfModule>
+

@@ -1,0 +1,62 @@
+/*------------------------------------*\
+    #nav
+\*------------------------------------*/
+.main-nav{
+  position: fixed;
+  bottom: 0;
+  right:0;
+  left: 0;
+  z-index: 10;
+  background: $white;
+  padding-left: 0;
+  @include flexbox();
+  @include flex-direction(row);
+  border-top:1px solid $gray-light;
+}
+
+.main-nav__item{
+  padding: $inuit-base-spacing-unit--tiny $inuit-base-spacing-unit--small;
+  text-align: center;
+  overflow: hidden;
+  @include flexbox();
+  @include flex-direction(column);
+  text-decoration: none;
+  font-size:$inuit-heading-size-6;
+  justify-content: center;
+  color: $beige-dark;
+  @include flex-grow(1);
+}
+.main-nav__item--active{
+  color: $blue-dark;
+}
+@media (min-width: $lap) {
+  .main-nav__item--active{
+    background: $beige-light;
+    color: $gray-dark;
+  }
+}
+@media (min-width: $nav-breal-point) {
+  .main-nav{
+    top: 46px;
+    width:$nav-width;
+    right:auto;
+    @include flex-direction(column);
+    border: none;
+  }
+  .main-nav__item{
+    @include flex-direction(row);
+    width:auto;
+    padding: $inuit-base-spacing-unit;
+    @include flex-grow(0);
+  }
+  .navbar-item{
+    @include flex-grow(1);
+    text-align: left;
+    padding-left: $inuit-base-spacing-unit--small;
+  }
+}
+@media (min-width: 1292px) {
+  .main-nav__item{
+    font-size:$inuit-heading-size-4;
+  }
+}

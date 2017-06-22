@@ -1,0 +1,203 @@
+/*
+ * @ form mask */
+
+.fmask {
+  position: relative
+}
+
+.fmask:after {
+  clear: both;
+  display: block;
+  content: " "
+}
+
+/*
+ * @ form mask : select */
+
+.slimScrollDiv {
+}
+
+.b.on {
+  position: relative;
+  z-index: 30;
+}
+
+.fmask.select .h {
+  @extend select;
+}
+
+.fmask.select.on .h {
+  @extend select:active;
+
+}
+
+.fmask.select .b {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background: inherit;
+  background: $beige-light;
+  border: $border;
+  border-top: none;
+  -webkit-box-shadow: inset 0px -9px 29px -18px $blue-dark;
+  -moz-box-shadow: inset 0px -9px 29px -18px $blue-dark;
+  box-shadow: inset 0px -9px 29px -18px $blue-dark;
+  @include prefix(border-radius, 0 0 .3rem .3rem);
+
+}
+
+.fmask.select .s {
+  overflow: auto;
+  height: 100px
+}
+
+.fmask.select li {
+  padding: 8px 8px;
+  cursor: default;
+  line-height: 16px
+}
+
+/*
+ @ form mask: select width turleri  */
+
+.fmask[data-width='medium'] {
+  width: 220px;
+}
+
+.fmask[data-width='large'] {
+  width: 280px
+}
+
+.fmask[data-width='small'] {
+  width: 120px
+}
+
+.fmask[data-width='likit'] {
+  width: 100%
+}
+
+.fmask.select {
+  width: 100%;
+}
+
+/*
+ @ form mask: select scroll */
+
+.fmask.select[data-scroll='medium'] .s {
+  height: 120px
+}
+
+.fmask.select[data-scroll='large'] .s {
+  height: 70px
+}
+
+.fmask.select[data-scroll='small'] .s {
+  height: 90px
+}
+
+.fmask.select[data-scroll='false'] .s {
+  overflow: visible;
+  height: auto
+}
+
+.fmask.select li[data-selected='on'] {
+  color: $blue-dark;
+}
+
+.fmask.select li:hover {
+  background: $blue-dark;
+  color: $white;
+}
+
+.fmask.select .h i[data-icon='arrow']:before {
+  content: "";
+  display: block;
+  right: $inuit-base-spacing-unit--small;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid $blue-dark;
+}
+
+.fmask.select .h i[data-icon='arrow'] {
+  @extend .transition;
+  color: $blue-dark;
+  position: absolute;
+  right: 9px;
+  top: 20px;
+}
+
+.fmask.select .h:hover i[data-icon='arrow'] {
+  color: #000
+}
+
+.fmask.select.on .h i[data-icon='arrow'] {
+  transform: rotate(180deg);
+  color: #888
+}
+
+.fmask {
+  margin-bottom: $inuit-base-spacing-unit--tiny;
+}
+
+[data-info-select]:not([data-info-select=undefined]) {
+  //color: $alert-danger-border;
+  &:after {
+    padding-left: $inuit-base-spacing-unit--tiny;
+    content: " (" attr(data-info-select) " )";
+    display: inline-block;
+    //color: $alert-danger-border;
+  }
+}
+
+.slimScrollDiv [data-info-select^="Contient"] {
+  color: $succes;
+  &:after {
+    color: $succes;
+  }
+}
+
+.slimScrollDiv [data-info-select^="Ne contient"] {
+  color: $alert-danger-border;
+  &:after {
+    color: $alert-danger-border;
+  }
+}
+
+.box .fmask.select .b {
+  background: $white;
+}
+
+.color-selector + div {
+  li {
+    span {
+      display: inline-block;
+      width: 20px;
+      height: 10px;
+      margin-right: $inuit-base-spacing-unit--small;
+
+    }
+  }
+}
+
+.js {
+  .mask {
+    @extend .visuallyhidden;
+  }
+}
+
+.no-js {
+  .mask {
+    margin-bottom: 12px;
+    width: 100%;
+  }
+}
+
+.no-js {
+  .profile-container {
+    .mask {
+      background: white;
+    }
+  }
+}

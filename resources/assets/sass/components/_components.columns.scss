@@ -1,0 +1,19 @@
+/*------------------------------------*\
+    #style for column
+\*------------------------------------*/
+
+.column-container{
+  height: 100%;
+  min-height: 100%;
+}
+.column{
+  min-height: 100%;
+  color: white;
+}
+.column--red{
+  background: $red;
+}
+.column--blue{
+  background: $blue-dark;
+  padding-right: $inuit-base-spacing-unit;
+}

@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    #box__search
+\*------------------------------------*/
+
+.box__search {
+  background: none;
+  border: $border;
+  padding: $inuit-base-spacing-unit--tiny;
+  display: block;
+  @include border-radius(0.5em);
+  outline: none;
+  width: 100%;
+}

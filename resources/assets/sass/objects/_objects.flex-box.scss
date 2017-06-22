@@ -1,0 +1,34 @@
+/*------------------------------------*\
+    #Flex box
+\*------------------------------------*/
+
+.vertical-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.aligner-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aligner-item--midle-container {
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.max-height {
+  min-height: 100vh;
+}

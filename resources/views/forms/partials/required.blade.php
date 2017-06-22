@@ -1,0 +1,1 @@
+<i data-original-title="Ce champ est obligatoire" data-toggle="tooltip">{{$requiresymbol}}</i>

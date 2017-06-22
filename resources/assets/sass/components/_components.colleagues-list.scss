@@ -1,0 +1,19 @@
+/*------------------------------------*\
+    #colleagues-header
+\*------------------------------------*/
+
+.colleagues-header{
+      border-bottom:1px solid $gray-dark;
+}
+.colleagues-container{
+
+}
+.colleague__item{
+  padding: $inuit-base-spacing-unit--small;
+  background: $white;
+  @include prefix(border-radius,.2em)
+}
+.colleague__item__name{
+  display: inline-block;
+  line-height: $inuit-base-spacing-unit--large;
+}

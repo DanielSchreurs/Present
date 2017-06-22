@@ -1,0 +1,50 @@
+/*!
+ * inuitcss, by @csswizardry
+ *
+ * github.com/inuitcss | inuitcss.com
+ */
+///*------------------------------------*\
+//    #DEFAULTS
+//\*------------------------------------*/
+
+// These variables are inuitcss’ defaults; they should not be modified or
+// adjusted directly; you should predefine the variables in your own project.
+
+// High-level base settings.
+$inuit-base-font-size: 16px;
+$inuit-base-line-height: 24px;
+$inuit-base-text-color: #333;
+$inuit-base-background-color: #fff;
+$base-fon-family: 'Fira Sans', 'Meta', 'Helvetica Neue', 'sans-serif';
+$serif: 'Garamond', serif;
+
+// Namespace.
+//
+// Would you like inuitcss’ classes to be prepended with a namespace? If so,
+// define it here.
+//$inuit-namespace:               null;
+
+// These variables are framework variables, sourced from variables defined
+// above. Feel free to use these variables throughout your project, but do not
+// modify or reassign them.
+$inuit-base-spacing-unit: $inuit-base-line-height;
+$inuit-base-spacing-unit--tiny: round($inuit-base-spacing-unit / 4);
+$inuit-base-spacing-unit--small: round($inuit-base-spacing-unit / 2);
+$inuit-base-spacing-unit--large: round($inuit-base-spacing-unit * 2);
+$inuit-base-spacing-unit--huge: round($inuit-base-spacing-unit * 4);
+
+$inuit-responsive-settings: true;
+
+$inuit-enable-layout--tiny: false;
+$inuit-enable-layout--small: false;
+$inuit-enable-layout--large: false;
+$inuit-enable-layout--huge: true;
+$inuit-enable-layout--flush: false;
+$inuit-enable-layout--rev: true;
+$inuit-enable-layout--middle: false;
+$inuit-enable-layout--bottom: false;
+$inuit-enable-layout--right: false;
+$inuit-enable-layout--center: true;
+$inuit-enable-layout--auto: false;
+
+$inuit-enable-media--tiny: true;

@@ -1,0 +1,17 @@
+.dashbord-layout{
+  @include flexbox();
+  @include flex-direction(column);
+
+}
+.dashbord-layout__item--last{
+  order: 1;
+}
+@media (min-width: $portable) {
+  .dashbord-layout__item--last{
+    order: 0;
+  }
+  .dashbord-layout{
+    @include flex-direction(row);
+
+  }
+}

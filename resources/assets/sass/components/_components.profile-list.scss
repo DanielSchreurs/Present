@@ -1,0 +1,47 @@
+/*------------------------------------*\
+    #profile pictures
+\*------------------------------------*/
+.profile-container {
+  > div {
+    background: $white;
+  }
+}
+
+.profile-container__box {
+  min-height: 0;
+  h1,h2,h3,h4,h5,h6{
+    font-size:inherit;
+  }
+}
+
+.profile-container__box--list {
+  margin-bottom: $inuit-base-spacing-unit--small;
+  button{
+    padding-right: 0;
+  }
+}
+.profile-picture {
+  max-width: 50px;
+  border: $border--bold;
+  margin-bottom: $inuit-base-spacing-unit--small;
+}
+.profile-picture--present {
+  border: $border--succes--bold;
+}
+
+.profile-picture--absent {
+  max-width: 150px;
+  border: $border--alert--bold;
+}
+
+.profile-name {
+  display: block;
+}
+
+.profile-container__box--list {
+  @include flexbox();
+  @include flex-direction(row);
+  & > a {
+    @include flex-grow(1);
+  }
+}
