@@ -56,7 +56,7 @@
 @import "./tools/tools.flex.mixin";
 //// 3. Generic
 @import "../../../node_modules/inuit-starter-kit/node_modules/inuit-normalize/generic.normalize";
-@import "../../../node_modules/inuit-starter-kit/node_modules/inuit-box-sizing/generic.box-sizing";
+@import "../../../node_modules/inuit-box-sizing/generic.box-sizing";
 @import "../../../node_modules/inuit-reset/generic.reset";
 @import "../../../node_modules/inuit-box-sizing/generic.box-sizing";
 @import "./generic/generic.helper";
@@ -132,7 +132,6 @@
 @import "./components/components.flex-header";
 @import "./components/components.note";
 //@import "./components/components.croppie";
-
 
 //// 7. Trumps
 @import "../../../node_modules/inuit-headings-trumps/trumps.headings";

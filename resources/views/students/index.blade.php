@@ -18,7 +18,5 @@
             @endforeach
         </ul>
     @endif
-
-
     @include('pagination.default', ['paginator' => $students])
 @stop

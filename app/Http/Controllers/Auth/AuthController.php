@@ -105,7 +105,7 @@ class AuthController extends Controller
 
         $user = $this->create($request->all());
         \Auth::login($user, true);
-        //UserVerification::generate($user);
+        UserVerification::generate($user);
 
         //UserVerification::send($user, 'Présent | Veuillez valider votre adresse e-mail');
 

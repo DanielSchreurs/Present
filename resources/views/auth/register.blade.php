@@ -270,7 +270,7 @@
                         @include('forms.users.auth.registerOrLogin',['submit'=>'S’inscrire'])
                         {!! Form::close() !!}
                     @endif
-                    @include('forms.partials.social-link')
+                    {{--@include('forms.partials.social-link')--}}
                     {{--<p class="welkcome-caption">Vous êtes déjà
                         membre&nbsp;? {!! Html::linkAction('Auth\AuthController@getLogin','Identifiez-vous',[],['class'=>'']) !!}</p>--}}
                 </div>
