@@ -167,10 +167,10 @@
                         <td colspan="3" height="6"></td>
                     </tr>
                     <tr style="line-height: 0px">
-                        <td width="100%" style="font-size: 0px" align="center" height="1"><img width="40px"
+                        <td width="100%" style="font-size: 0px" align="center" height="1"><img width="32px"
                                                                                                style="max-height: 73px ; width: 40px"
                                                                                                alt=""
-                                                                                               src="http://files.danielschreurs.com/img/logo-mail.png">
+                                                                                               src="http://present.danielschreurs.com/favicons/favicon-32x32.png">
                         </td>
                     </tr>
                     <tr>

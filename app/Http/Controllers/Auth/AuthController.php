@@ -107,7 +107,7 @@ class AuthController extends Controller
         \Auth::login($user, true);
         UserVerification::generate($user);
 
-        //UserVerification::send($user, 'Présent | Veuillez valider votre adresse e-mail');
+        UserVerification::send($user, 'Présent | Veuillez valider votre adresse e-mail');
 
         return redirect($this->redirectPath())->with('isRegister', ['']);
     }
