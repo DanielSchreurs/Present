@@ -170,7 +170,7 @@
                         <td width="100%" style="font-size: 0px" align="center" height="1"><img width="32px"
                                                                                                style="max-height: 73px ; width: 40px"
                                                                                                alt=""
-                                                                                               src="http://present.danielschreurs.com/favicons/favicon-32x32.png">
+                                                                                               src="https://present.danielschreurs.com/favicons/favicon-32x32.png">
                         </td>
                     </tr>
                     <tr>
@@ -188,7 +188,7 @@
                                         <p>Vous avez oublié votre mot de passe ?</p><br><br>
                                         <center><a
                                                     style="border-radius: 3px ; font-size: 15px ; color: white ;  text-decoration: none ; padding: 14px 7px 14px 7px ; width: 200px ; max-width: 200px ; font-family: &quot;fira&quot; , &quot;open sans&quot; , &quot;lucida grande&quot; , &quot;segoe ui&quot; , &quot;arial&quot; , &quot;verdana&quot; , &quot;lucida sans unicode&quot; , &quot;tahoma&quot; , sans-serif ; margin: 6px auto ; display: block ; background-color: #2727CC; text-align: center"
-                                                    href="{{ url('password/reset/'.$token) }}">Réinitialiser mon mot de passe&nbsp;!</a></center>
+                                                    href="{{ secure_url('password/reset/'.$token) }}">Réinitialiser mon mot de passe&nbsp;!</a></center>
                                         <br>
                                         <br><br><?php
                                         if(date("H") < 12){

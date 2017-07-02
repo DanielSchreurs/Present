@@ -170,7 +170,7 @@
                         <td width="100%" style="font-size: 0px" align="center" height="1"><img width="32px"
                                                                                                style="max-height: 73px ; width: 40px"
                                                                                                alt="Logo Présent"
-                                                                                               src="http://present.danielschreurs.com/favicons/favicon-32x32.png">
+                                                                                               src="https://present.danielschreurs.com/favicons/favicon-32x32.png">
                         </td>
                     </tr>
                     <tr>
@@ -189,7 +189,7 @@
                                             il ne nous reste plus qu'à valider ton adresse e-mail.</p><br><br>
                                         <center><a
                                                     style="border-radius: 3px ; font-size: 15px ; color: white ;  text-decoration: none ; padding: 14px 7px 14px 7px ; width: 200px ; max-width: 200px ; font-family: &quot;fira&quot; , &quot;open sans&quot; , &quot;lucida grande&quot; , &quot;segoe ui&quot; , &quot;arial&quot; , &quot;verdana&quot; , &quot;lucida sans unicode&quot; , &quot;tahoma&quot; , sans-serif ; margin: 6px auto ; display: block ; background-color: #2727CC; text-align: center"
-                                                    href="{{ $link = url('verification', $user->verification_token) . '?email=' . urlencode($user->email) }}">valider
+                                                    href="{{ $link = secure_url('verification', $user->verification_token) . '?email=' . urlencode($user->email) }}">valider
                                                 mon adresse e-mail</a></center>
                                         <br>
                                         <br><br>Bienvenue chez Présent&nbsp;!<br>L'équipe Présent
